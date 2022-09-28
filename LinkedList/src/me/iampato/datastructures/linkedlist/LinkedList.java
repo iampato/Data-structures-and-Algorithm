@@ -76,8 +76,13 @@ public class LinkedList {
     public void removeFirst() {
         // "A" -> "B" -> "C"
         // check first node is empty
-        if (first == null) {
+        if (last == null || first == null) {
             throw new NoSuchElementException();
+        }
+        // there is only one item
+        if(first == last){
+            first = last = null;
+            return;
         }
         // "B" needs to be the first element
         // So get B
@@ -89,14 +94,18 @@ public class LinkedList {
     public void removeLast() {
         // "A" -> "B" -> "C" -> "D"
         // check first node is empty
-        if (last == null) {
+        if (last == null || first == null) {
             throw new NoSuchElementException();
         }
+        // there is only one item
+        if(first == last){
+            first = last = null;
+            return;
+        }
+
         // we need to find "C" and we know "D"
         // the relationship is the nextNode for C is equal to D
         // iterate
-
-
         // now we have "C" in secondLastNode
         // we need to set secondLastNode nextNode to null
         // then set last node to secondLastNode
