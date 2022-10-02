@@ -61,7 +61,7 @@ class Main {
 }
 ```
 
-## 1 Hashmaps
+## 2 Hashmaps
 item complexity -> O(nlog(n))
 
 space complexity -> O(n)
