@@ -1,2 +1,4 @@
-package me.iampato.datastructures.stacks;public class Main {
+package me.iampato.datastructures.stacks;
+
+public class Main {
 }
